@@ -1,16 +1,19 @@
-# IDI III 
+<figure>
+<p align="center">
+  <img src="./img/idi_4.png" width='70%' />
+      <figcaption></figcaption>
+</p>
+</figure>
+
 
 Profesor: Emmanuel Alcalá
-Horario: Viernes de 6pm-8pm
+Horario: Por definir
 
 Clase para el desarrollo de un proyecto para la obtención de grado en Maestría en Análisis de Datos.
 
 ---
 
-[Plantilla para el Reporte Técnico en Quarto](/reporte_quarto/template_reporte.qmd)
-
-Renderizado el pdf se puede ver [aquí](/reporte_quarto/template_reporte.pdf)
-
+El reporte se hará de acuerdo con la plantilla en Word [aquí](Estructura_TOG%20_RPP.docx)
 
 Algunos ejemplos de reportes de este tipo en ML se pueden ver en la página del curso CS229: Machine Learning de Standford.
 

@@ -1,12 +1,12 @@
 # Checklist para proyecto de Ciencia de Datos
 
-- [ ] [Definir el problema](#definir-el-problema) y/o formular un panorama general para dicho problema.
-- [ ] [Obtener los datos](#obtener-los-datos).
-- [ ] [Explorar los datos](#explorar-datos) para obtener ideas, intuiciones, y armar un plan de trabajo.
-- [ ] [Preparar los datos](#preparar-los-datos) para exponer patrones subyacentes usando algoritmos.
-- [ ] Explorar diferentes modelos, y realizar una lista escogiendo los mejores de acuerdo a alguna métrica (e.g., RMSE).
-- [ ] Afinar los modelos (e.g., reentrenamiento haciendo una búsqueda exhaustiva en un rango de parámetros) y combinarlos en una solución mayor.
-- [ ] Presentar la solución.
+- [x] [Definir el problema](#definir-el-problema) y/o formular un panorama general para dicho problema.
+- [x] [Obtener los datos](#obtener-los-datos).
+- [x] [Explorar los datos](#explorar-datos) para obtener ideas, intuiciones, y armar un plan de trabajo.
+- [x] [Preparar los datos](#preparar-los-datos) para exponer patrones subyacentes usando algoritmos.
+- [ ] [Explorar diferentes modelos](#explorar-diferentes-modelos), y realizar una lista escogiendo los mejores de acuerdo a alguna métrica (e.g., RMSE).
+- [ ] [Afinar los modelos](#afinar-los-modelos) (e.g., reentrenamiento haciendo una búsqueda exhaustiva en un rango de parámetros) y combinarlos en una solución mayor.
+- [ ] [Presentar la solución](#presentar-la-solución).
 
 ## Definir el problema
 
@@ -79,4 +79,10 @@ Si existen expertos en este tipo de datos, no dudes en buscar su ayuda.
    1. E.g., Unit-based normalization.
    2. Esto es importante cuando tienes variables de diferentes escalas
 
-## 
+## Explorar diferentes modelos
+
+## Afinar los modelos
+
+## Presentar la solución
+
+1. Documento final. 
