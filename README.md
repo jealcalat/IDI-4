@@ -1,6 +1,6 @@
 <figure>
 <p align="center">
-  <img src="./img/idi_4.png" width='70%' />
+  <img src="./img/idi_4_largo.png" width='50%' />
       <figcaption></figcaption>
 </p>
 </figure>
