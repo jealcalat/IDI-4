@@ -80,9 +80,39 @@ Si existen expertos en este tipo de datos, no dudes en buscar su ayuda.
    2. Esto es importante cuando tienes variables de diferentes escalas
 
 ## Explorar diferentes modelos
+>Notas
+> - Si el conjunto de datos es largo y tienes más de un modelo, quizá sea mejor muestrear un conjunto más pequeño primero, de manera que puedas entrenarlos en un tiempo razonable.
+> - Lo anterior penaliza modelos que requieren muchos datos, como las redes neurales.
+> - Para este curso **no uses más de dos modelos**, dado que no es razonable terminar de entrenarlos, afinarlos y presentar resultados en 4 meses.
+
+1. Entrena los modelos usando parámetros estándar (e.g., por defecto).
+2. Mide y compara su ejecución.
+   1. Para cada modelo, puedes usar validación cruzada $k$-fold. Calcula la media y la desviación estándar de la medida de ejecución que hayas elegido.
+3. Analiza las variables más significativas de cada algoritmo.
+4. Analiza los errores que cometiste o cometió el modelo
+   1. Si puedes identificar qué tipo de datos pudieran haber hecho que ese/esos errores no sucediera/n, tómalo en cuenta y retroalimenta el proceso para la siguiente ocasión.
+5. Ten una ronda rápida de selección e ingeniería de características.
+6. Realiza una o dos iteraciones rápidas de los pasos 1-5.
+7. Escoge el modelo más prometedor.
 
 ## Afinar los modelos
+> Notas
+> - En este paso usa tantos datos como sea posible.
+
+1. Ajusta los hiperparámetros usando CV.
+   1. Trata las elecciones de transformación de datos como hiperparámetros, especialmente cuando no estás seguro acerca de ellos (por ejemplo, ¿reemplazarías valores perdidos con cero, la mediana, usando imputación o solo retirando los valores?). 
+   2. Escoge cuidadosamente qué clase de experimentos harás para evaluar los mejores resultados. De preferencia, piensa con antelación las variaciones que harás y ejecuta el proceso simultáneamente para que no pierdas tiempo
+   3. A menos de que tengas muy pocos hiperparámetros, prefiere la búsqueda aleatoria en vez de la búsqueda en *grid* (ésta última crece la cantidad de pasos de forma exponencial). 
+2. Una vez que tengas suficiente confianza en tu modelo, mide su ejecución en el conjunto de prueba para estimar el error de generalización.
+3. **No hagas modificaciones después de medir el error de generalización**, esto solo hará que sobreajustes en el conjunto de prueba.
 
 ## Presentar la solución
 
-1. Documento final. 
+1. Documenta todo lo que hayas hecho: las decisiones que tomaste, qué criterios usaste para tomarlas, etc.
+2. Escoge con cuidado la mejor narrativa para tu solución:
+   1. Tablas resumidas de los principales resultados (e.g., ejecución del modelo, porcentaje de predicción, precisión, etc).
+   2. Tus resultados deben tener una calidad adecuada para presentarla frente a un grupo de personas educadas y críticas. Por ejemplo, cuida los colores de los gráficos, el tamaño de la letra, etc. No atiborres de estadísticos ni de datos las tablas que vayas a presentar. 
+   3. No presentes resultados en una forma que sea complicada o imposible de entender, por mucho atractivo visual que pudiera tener. 
+   4. Que tu set-point sea un objetivo de negocio. Pregúntate: ¿este resultado, o esta forma de presentar el resultado le importará a mi cliente?
+3. Una vez que hayas elegido gráficos, tablas, etc., de la calidad que te satisfaga, escríbelos en tu reporte técnico.
+4. Adicionalmente, realiza una presentación *ejecutiva* con tus resultados principales. De nuevo, teniendo en mente la pregunta 2.4.: ¿cómo le presentarás a tus clientes una solución de ciencia de datos?
